@@ -31,7 +31,12 @@ zza firewalla lub routera z maskarad±.
 %setup -q
 
 %build
-%configure2_13
+rm -f missing
+%{__aclocal}
+%{__autoconf}
+%{__automake}
+
+%configure
 %{__make}
 
 %install
