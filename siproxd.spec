@@ -52,5 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README RELNOTES TODO doc/FAQ   doc/siproxd.conf.example doc/siproxd_passwd.cfg
+%doc AUTHORS ChangeLog README RELNOTES TODO doc/FAQ doc/siproxd.conf.example doc/siproxd_passwd.cfg
 %attr(755,root,root) %{_bindir}/siproxd
