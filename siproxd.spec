@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/siproxd/%{name}-%{version}.tar.gz
+# Source0-md5:	1f1c06fbc71a498eb5af975c1728261b
 URL:		http://siproxd.sourceforge.net/
 BuildRequires:	libosip2 >= 1.99.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
