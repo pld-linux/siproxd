@@ -8,6 +8,8 @@ Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/siproxd/%{name}-%{version}.tar.gz
 # Source0-md5:	1f1c06fbc71a498eb5af975c1728261b
 URL:		http://siproxd.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libosip-devel >= 0.9.3
 #BuildRequires:	libosip2 >= 1.99.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -51,5 +53,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README RELNOTES TODO doc/FAQ   doc/siproxd.conf.example doc/siproxd_passwd.cfg
-   
 %attr(755,root,root) %{_bindir}/siproxd
