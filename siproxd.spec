@@ -2,13 +2,14 @@ Summary:	A SIP masquerading proxy with RTP support
 Summary(pl):	Proxy z maskarad± SIP ze wsparciem dla RTP
 Name:		siproxd
 Version:	0.3.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/siproxd/%{name}-%{version}.tar.gz
 # Source0-md5:	1f1c06fbc71a498eb5af975c1728261b
 URL:		http://siproxd.sourceforge.net/
-BuildRequires:	libosip2 >= 1.99.0
+BuildRequires:	libosip-devel
+#BuildRequires:	libosip2 >= 1.99.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,7 +31,7 @@ zza firewalla lub routera z maskarad±.
 %setup -q
 
 %build
-%configure
+%configure2_13
 %{__make}
 
 %install
@@ -44,5 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README RELNOTES TODO doc/FAQ
+%doc AUTHORS ChangeLog README RELNOTES TODO doc/FAQ   doc/siproxd.conf.example doc/siproxd_passwd.cfg
+   
 %attr(755,root,root) %{_bindir}/siproxd
