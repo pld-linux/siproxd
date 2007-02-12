@@ -1,5 +1,5 @@
 Summary:	A SIP masquerading proxy with RTP support
-Summary(pl):	Proxy z maskarad± SIP ze wsparciem dla RTP
+Summary(pl.UTF-8):   Proxy z maskaradÄ… SIP ze wsparciem dla RTP
 Name:		siproxd
 Version:	0.3.5
 Release:	1
@@ -22,12 +22,12 @@ possible via an masquerading firewall. It allows SIP clients (like
 kphone, linphone) to work behind an IP masquerading firewall or
 router.
 
-%description -l pl
-Siprox jest to demon proxy/maskarady dla protoko³u SIP. Obs³uguje on
-rejestracjê klientów SIP w prywatnej sieci IP oraz przepisuje
-komunikaty SIP w sposób umo¿liwiaj±cy po³±czenia poprzez firewall z
-maskarad±. Umo¿liwia on klientom (takim jak kphone, linphone) pracê
-zza firewalla lub routera z maskarad±.
+%description -l pl.UTF-8
+Siprox jest to demon proxy/maskarady dla protokoÅ‚u SIP. ObsÅ‚uguje on
+rejestracjÄ™ klientÃ³w SIP w prywatnej sieci IP oraz przepisuje
+komunikaty SIP w sposÃ³b umoÅ¼liwiajÄ…cy poÅ‚Ä…czenia poprzez firewall z
+maskaradÄ…. UmoÅ¼liwia on klientom (takim jak kphone, linphone) pracÄ™
+zza firewalla lub routera z maskaradÄ….
 
 %prep
 %setup -q
