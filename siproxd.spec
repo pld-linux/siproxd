@@ -1,5 +1,5 @@
 Summary:	A SIP masquerading proxy with RTP support
-Summary(pl.UTF-8):   Proxy z maskaradą SIP ze wsparciem dla RTP
+Summary(pl.UTF-8):	Proxy z maskaradą SIP ze wsparciem dla RTP
 Name:		siproxd
 Version:	0.3.5
 Release:	1
