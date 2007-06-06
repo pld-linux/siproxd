@@ -1,12 +1,12 @@
 Summary:	A SIP masquerading proxy with RTP support
 Summary(pl.UTF-8):	Proxy z maskaradą SIP ze wsparciem dla RTP
 Name:		siproxd
-Version:	0.3.5
+Version:	0.5.13
 Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/siproxd/%{name}-%{version}.tar.gz
-# Source0-md5:	8db82f78bf71a04570a85bf897f5d5e5
+# Source0-md5:	91a572f80dd5a9af5a0f7f207fd34478
 URL:		http://siproxd.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -39,12 +39,12 @@ rm -f missing
 %{__automake}
 
 %configure
-%{__make}
+%{__make} -C src
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} -C src install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
@@ -53,4 +53,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README RELNOTES TODO doc/FAQ doc/siproxd.conf.example doc/siproxd_passwd.cfg
-%attr(755,root,root) %{_bindir}/siproxd
+%attr(755,root,root) %{_sbindir}/siproxd
